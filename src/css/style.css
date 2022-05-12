@@ -1,1 +1,50 @@
-/*# sourceMappingURL=style.css.map */
+main {
+  display: grid;
+  grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+main__head {
+  grid-area: header;
+}
+main__container {
+  grid-area: main;
+}
+main__foot {
+  grid-area: footer;
+}
+main main__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(./src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
+}
+main main__head__logo {
+  justify-self: center;
+}
+main main__head__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main main__head__nav__list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main main__head__nav__list__sublist {
+  text-decoration: none;
+}
+main main__head__title2 {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}/*# sourceMappingURL=style.css.map */

@@ -12,5 +12,28 @@ main{
     &__head { grid-area: header; }
     &__container { grid-area: main; }
     &__foot { grid-area: footer; }
+
+    main__head{
+        display: flex;
+        justify-content: space-between;
+        background-image: url(./src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
+        &__logo{
+            justify-self: center;        
+        }
+        &__nav{
+            display: flex;
+            flex-direction: row;
+            &__list{
+                justify-content: space-between;
+                &__sublist{
+                    text-decoration: none;    
+                }
+            }
+        }
+        &__title2{
+            justify-self: center;
+            align-self: center;
+        }
+    }
 }
 
