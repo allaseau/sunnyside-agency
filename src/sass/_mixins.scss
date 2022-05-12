@@ -1,12 +1,1 @@
 @import url(_variables.scss);
-
-@mixin grid {
-    display: grid;
-    grid-template-areas:
-    'header'
-    'main'
-    'footer';
-    gap: 10px;
-    padding: 10px; 
-
-}

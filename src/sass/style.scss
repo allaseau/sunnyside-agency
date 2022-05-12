@@ -1,18 +1,114 @@
 @import url(_mixins.scss);
 @import url(_variables.scss);
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .main{
 
-    @include grid;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    font-family: 'fraunces';
 
     &__head { grid-area: header; }
     &__container { grid-area: main; }
     &__foot { grid-area: footer; }
 
     .main__head{
-        display: flex;
-        flex-direction: row;
-        background-image: url(./src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
+        height: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        background-image: url(/src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .head__nav{
+        color: white;
+        
+        .nav__list{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+
+            .list__sublist{
+                border-radius: 30px;
+                text-decoration: none;
+                li{
+                    margin: 10px;
+                }
+            }
+            .list__sublist:active{
+                background-color: white;
+                color: black;
+            }
+            .list__sublist:hover{
+                background-color: rgb(60, 220, 229);
+                color: white;  
+            }
+        }
+
+    }
+    .head__title2{
+        font-size: 3.5rem;
+        justify-self: center;
+        grid-column: 1 / 3;
+        color: white;
+    }
+
+    .main__container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        .container__section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            height: 80vh;
+
+            .cherrie{
+                background-image: url("/src/images/mae-mu-vbAEHCrvXZ0-unsplash.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .orange {
+                @extend .cherrie;
+                background-image: url("/src/images/mae-mu-U1iYwZ8Dx7k-unsplash.jpg");
+            }
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            height: 80vh;
+
+            .section__title4{
+                grid-column: 1 / 4;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .galerie{
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+    .main_foot{
+        background-color: #90D4C6;
+        
     }
 
 
