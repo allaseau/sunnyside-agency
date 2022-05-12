@@ -25,7 +25,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr;
-        background-image: url(/src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
+        background-image: url("./src/images/mae-mu-1APtYqzNajA-unsplash.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -74,13 +74,13 @@
             height: 80vh;
 
             .cherrie{
-                background-image: url("/src/images/mae-mu-vbAEHCrvXZ0-unsplash.jpg");
+                background-image: url("./src/images/mae-mu-vbAEHCrvXZ0-unsplash.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
             }
             .orange {
                 @extend .cherrie;
-                background-image: url("/src/images/mae-mu-U1iYwZ8Dx7k-unsplash.jpg");
+                background-image: url("./src/images/mae-mu-U1iYwZ8Dx7k-unsplash.jpg");
             }
         }
 
