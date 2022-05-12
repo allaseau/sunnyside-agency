@@ -1,39 +1,21 @@
-main{
+@import url(_mixins.scss);
+@import url(_variables.scss);
 
-    display: grid;
-    grid-template-areas:
-    'header header header header header header'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
+.main{
+
+    @include grid;
 
     &__head { grid-area: header; }
     &__container { grid-area: main; }
     &__foot { grid-area: footer; }
 
-    main__head{
+    .main__head{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         background-image: url(./src/images/mae-mu-1APtYqzNajA-unsplash.jpg);
-        &__logo{
-            justify-self: center;        
-        }
-        &__nav{
-            display: flex;
-            flex-direction: row;
-            &__list{
-                justify-content: space-between;
-                &__sublist{
-                    text-decoration: none;    
-                }
-            }
-        }
-        &__title2{
-            justify-self: center;
-            align-self: center;
-        }
     }
+
+
 }
 
+    
