@@ -79,7 +79,7 @@
 .main .main__container {
   grid-area: main;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.74fr;
 }
 .main .main__container .container__section {
   display: grid;
@@ -113,6 +113,9 @@
 .main .main__container .container__section .section__image, .main .main__container .container__section .section__image .image__cup, .main .main__container .container__section .section__image .image__egg {
   width: 100%;
   height: 600px;
+}
+.main .main__container .container__section .section__image .image__cup {
+  height: 604px;
 }
 .main .main__container .container__section .cherrie, .main .main__container .container__section .orange {
   background-image: url("/src/images/mae-mu-vbAEHCrvXZ0-unsplash.jpg");
@@ -157,7 +160,7 @@
       -ms-flex-align: center;
           align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
   height: 80vh;
 }
 .main .main__container .testimonials .section__title4 {
@@ -171,19 +174,59 @@
           align-items: center;
   color: #A7AAAD;
   letter-spacing: 5px;
+  align-self: flex-end;
+}
+.main .main__container .testimonials .section__article {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 355px;
+}
+.main .main__container .testimonials .section__article .article__list {
+  list-style: none;
+  text-align: center;
+}
+.main .main__container .testimonials .section__article .article__list :first-child {
+  font-size: 18px;
+  line-height: 22.19px;
+  letter-spacing: -0.13px;
+  font-weight: 900;
+}
+.main .main__container .testimonials .section__article .article__list :nth-child(2) {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  color: #A7AAAD;
+}
+.main .main__container .testimonials .section__article .article__text {
+  text-align: center;
+}
+.main .main__container .testimonials .emily {
+  justify-self: end;
+}
+.main .main__container .testimonials .jennie {
+  justify-self: start;
 }
 .main .main__container .galerie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 350px;
+  width: 1440px;
 }
 .main .main__foot {
   grid-area: footer;
   width: 1440px;
   height: 350px;
   background-color: #90D4C6;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .main__foot .foot__logo {
+  color: #2C7566;
 }/*# sourceMappingURL=style.css.map */

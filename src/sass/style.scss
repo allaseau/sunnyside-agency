@@ -81,7 +81,7 @@
     .main__container{
         grid-area: main;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.74fr;
 
         .container__section{
             display: grid;
@@ -112,6 +112,7 @@
                 }
                 .image__cup{
                     @extend .section__image;
+                    height: 604px;
                 }
 
             }
@@ -153,7 +154,7 @@
             display: grid;
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr 1.5fr 0.5fr;
             height: 80vh;
 
             .section__title4{
@@ -163,12 +164,46 @@
                 align-items: center;
                 color: #A7AAAD;
                 letter-spacing: 5px;
+                align-self: flex-end;
+            }
+            .section__article{
+                    align-items: center;
+                    width: 355px;
+                .article__list{
+                    list-style: none;
+                    text-align: center;
+                }
+                .article__list :first-child{
+                    font-size: 18px;
+                    line-height: 22.19px;
+                    letter-spacing: -0.13px;
+                    font-weight: 900;
+                }
+                .article__list :nth-child(2){
+                    font-size: 14px;
+                    line-height: 25px;
+                    letter-spacing: -0.1px;
+                    font-weight: 600;
+                    color: #A7AAAD;
+                }
+                .article__text{
+                    text-align: center;
+                }
+            }
+            
+            .emily{
+                justify-self: end;
+            }
+            .jennie{
+                justify-self: start;
             }
         }
 
         .galerie{
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 350px;
+            width: 1440px;
         }
 
     }
@@ -177,6 +212,13 @@
         width: 1440px;
         height: 350px;
         background-color: #90D4C6;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        .foot__logo{
+            color: #2C7566;
+        }
         
     }
 
