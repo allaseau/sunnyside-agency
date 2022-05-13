@@ -36,48 +36,53 @@
             margin-left: 50px;
 
         }
-    }
-    .head__nav{
-        color: white;
-        grid-row: 2;
-        grid-column: 15;
-        
-        .nav__list{
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            column-gap: 30px;
-
-            .list__sublist{
-                border-radius: 30px;
-                text-decoration: none;
-                font-size: 1.125rem;
-                li{
-                    margin: 10px;
+        .head__nav{
+            color: white;
+            grid-row: 2;
+            grid-column: 14;
+            
+            .nav__list{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                column-gap: 30px;
+    
+                .list__sublist{
+                    border-radius: 30px;
+                    text-decoration: none;
+                    font-size: 1.125rem;
+                    li{
+                        margin: 10px;
+                    }
+                }
+                .list__sublist:active{
+                    background-color: white;
+                    color: black;
+                }
+                .list__sublist:hover{
+                    background-color: rgb(60, 220, 229);
+                    color: white;  
                 }
             }
-            .list__sublist:active{
-                background-color: white;
-                color: black;
-            }
-            .list__sublist:hover{
-                background-color: rgb(60, 220, 229);
-                color: white;  
-            }
+    
         }
-
+        .head__title2{
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 8.75px;
+            width: 750px;
+            grid-column: 6;
+            grid-row: 5;
+            color: white;
+        }
+        .head__fleche{
+            place-self: center;
+            grid-row: 10;
+            grid-column: 10;
+            justify-self: end;
+        }
     }
-    .head__title2{
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 8.75px;
-        width: 750px;
-        grid-column: 7;
-        grid-row: 5;
-        color: white;
-    }
-
     .main__container{
         grid-area: main;
         display: grid;
@@ -86,7 +91,6 @@
         .container__section{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            height: 80vh;
 
             .section__article{
                 display: flex;
@@ -99,6 +103,14 @@
                 height: 400px;
                 place-self: center;
 
+                .article__button{
+                    text-decoration: none;
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    color: #24303e;
+                    font-weight: 900;
+                }
+                
                 .article__text{
                     font-size: 18px;
                     line-height: 30px;
@@ -215,7 +227,66 @@
         display: grid;
         justify-content: center;
         align-items: center;
+
+        .foot__social{
+            width: 297px;
+            height: 206px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            .foot__logo{
+                align-self: start;
+                justify-self: center;
+            }
+
+        .foot__nav{
+                align-self: start;
+            .nav__list{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                column-gap: 30px;
+                color: #458d7e;
+                font-weight: 600;
+                line-height: 25px;
+                letter-spacing: -0.13px;
+                gap: 60px;
+    
+                .list__sublist{
+                    list-style: none;
+                    font-size: 1.125rem;
+                }
+            }
         
+        }
+
+        .container__section{
+            align-self: flex-end;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 297px;
+            text-align: center;
+            justify-content: center;
+        }
+        .section__insta{
+            text-decoration: none;
+            color: #2c7566;
+            width: 20px;
+            height: 20px;
+            justify-self: center;
+        }
+        .section__facebook{
+            @extend .section__insta;
+            
+        }
+        .section__twitter{
+            @extend .section__insta;
+            
+        }
+        .section__pint{
+            @extend .section__insta;
+        }
+    }
     }
 
 
