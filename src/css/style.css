@@ -11,9 +11,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   grid-template-areas: "header" "main" "footer";
-  font-family: "fraunces";
+  font-family: "barlow";
   max-width: 1440px;
   margin: 0 auto;
+}
+.main h1, .main h2, .main h3, .main h4, .main li, .main a {
+  font-family: "fraunces";
 }
 .main .main__head {
   grid-area: header;
@@ -54,6 +57,7 @@
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.125rem;
+  color: white;
 }
 .main .main__head .head__nav .nav__list .list__sublist li {
   margin: 10px;
@@ -117,16 +121,39 @@
   letter-spacing: 1px;
   color: #24303e;
   font-weight: 900;
+  width: 120px;
+  height: 20px;
+}
+.main .main__container .container__section .section__article .article__button .underline, .main .main__container .container__section .section__article .article__button .underline_egg {
+  width: 100px;
+  background-color: #FE7766;
+  border: 6px solid #FE7766;
+  border-radius: 20px;
+  opacity: 0.5;
+  display: none;
+  position: relative;
+  top: -8px;
+  left: -7px;
+}
+.main .main__container .container__section .section__article .article__button .underline_egg {
+  background-color: #FAD400;
+  border: 6px solid #FAD400;
+}
+.main .main__container .container__section .section__article .article__button:hover .underline, .main .main__container .container__section .section__article .article__button:hover .underline_egg {
+  display: block;
+}
+.main .main__container .container__section .section__article .article__button:hover .underline_egg {
+  display: block;
 }
 .main .main__container .container__section .section__article .article__text {
   font-size: 18px;
   line-height: 30px;
 }
-.main .main__container .container__section .section__image, .main .main__container .container__section .section__image .image__cup, .main .main__container .container__section .section__image .image__egg {
+.main .main__container .container__section .section__image, .main .main__container .container__section .section__image .image__cup, .main .main__container .container__section .section__image .image__egg .image__cup, .main .main__container .container__section .section__image .image__cup .image__egg, .main .main__container .container__section .section__image .image__cup .image__cup, .main .main__container .container__section .section__image .image__egg {
   width: 100%;
   height: 600px;
 }
-.main .main__container .container__section .section__image .image__cup {
+.main .main__container .container__section .section__image .image__cup, .main .main__container .container__section .section__image .image__cup .image__cup, .main .main__container .container__section .section__image .image__egg .image__cup {
   height: 604px;
 }
 .main .main__container .container__section .cherrie, .main .main__container .container__section .orange {
@@ -142,8 +169,8 @@
       -ms-flex-pack: end;
           justify-content: end;
 }
-.main .main__container .container__section .cherrie .cherrie__text, .main .main__container .container__section .orange .cherrie__text, .main .main__container .container__section .orange .orange__text {
-  width: 441px;
+.main .main__container .container__section .cherrie .cherrie__text, .main .main__container .container__section .cherrie .orange .orange__text, .main .main__container .container__section .orange .cherrie .orange__text, .main .main__container .container__section .orange .cherrie__text, .main .main__container .container__section .orange .orange__text {
+  width: 390px;
   height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +188,7 @@
   text-align: center;
 }
 .main .main__container .container__section .cherrie .cherrie__text .article__title3, .main .main__container .container__section .orange .cherrie__text .article__title3, .main .main__container .container__section .orange .orange__text .article__title3 {
-  width: 441px;
+  width: 390px;
 }
 .main .main__container .container__section .orange {
   background-image: url("/src/images/mae-mu-U1iYwZ8Dx7k-unsplash.jpg");
@@ -276,20 +303,29 @@
   list-style: none;
   font-size: 1.125rem;
 }
+.main .main__foot .foot__social .foot__nav .nav__list .list__sublist:hover {
+  color: white;
+  cursor: pointer;
+}
 .main .main__foot .foot__social .container__section {
   align-self: flex-end;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 297px;
+  width: 235px;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-self: center;
 }
-.main .main__foot .foot__social .section__insta, .main .main__foot .foot__social .section__pint, .main .main__foot .foot__social .section__twitter, .main .main__foot .foot__social .section__facebook {
+.main .main__foot .section__insta, .main .main__foot .section__pint, .main .main__foot .section__twitter, .main .main__foot .section__facebook {
   text-decoration: none;
   color: #2c7566;
   width: 20px;
   height: 20px;
   justify-self: center;
+}
+.main .main__foot .social, .main .main__foot .social .fa_brands {
+  height: 20px;
+  width: 20px;
+}
+.main .main__foot .social:hover, .main .main__foot .social .fa_brands:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
