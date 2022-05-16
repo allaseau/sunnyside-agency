@@ -14,6 +14,23 @@
   font-family: "barlow";
   max-width: 1440px;
   margin: 0 auto;
+  /*@media screen and (max-width: 1000px) {
+
+
+
+          max-width: 375px;
+
+          .main__container{
+              grid-template-columns: 1fr;
+
+              .container__section{
+                  grid-template-columns: 1fr;
+                  grid-template-rows: 1fr 1fr;
+              }
+
+          }
+
+  }*/
 }
 .main h1, .main h2, .main h3, .main h4, .main li, .main a {
   font-family: "fraunces";
@@ -302,6 +319,7 @@
 .main .main__foot .foot__social .foot__nav .nav__list .list__sublist {
   list-style: none;
   font-size: 1.125rem;
+  font-family: "barlow";
 }
 .main .main__foot .foot__social .foot__nav .nav__list .list__sublist:hover {
   color: white;

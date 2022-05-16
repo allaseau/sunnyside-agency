@@ -1,6 +1,7 @@
 @import url(_mixins.scss);
 @import url(_variables.scss);
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -32,12 +33,14 @@
         background-image: url("/src/images/mae-mu-1APtYqzNajA-unsplash.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+
         .head__logo{
             height: 33px;
             width: 170px;
             grid-row: 2;
             grid-column: 1;
             margin-left: 50px;
+
 
         }
         .head__nav{
@@ -286,6 +289,7 @@
                 .list__sublist{
                     list-style: none;
                     font-size: 1.125rem;
+                    font-family: 'barlow';
                 }
                 .list__sublist:hover{
                     color: white;
@@ -334,6 +338,25 @@
             color: white;
     }
     }
+    /*@media screen and (max-width: 1000px) {
+        
+        
+        
+            max-width: 375px;
+    
+            .main__container{
+                grid-template-columns: 1fr;
+    
+                .container__section{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                }
+    
+            }
+        
+    }*/
 }
+
+
 
     
